@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0b0f14;
+  color: #e6e6e6;
+}
+.app { max-width: 1200px; margin: 0 auto; padding: 24px; }
+header { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+h1 { margin: 0; font-size: 22px; color: #fff; }
+.controls { display: flex; align-items: center; gap: 8px; }
+button { background: #1f6feb; color: #fff; border: none; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+button[disabled] { background: #3a3f45; cursor: not-allowed; }
+.status { margin-left: 8px; font-size: 13px; color: #9aa4b2; }
+.hint { margin: 0; font-size: 13px; color: #9aa4b2; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }
+.column { background: #0e131a; border: 1px solid #1b2430; border-radius: 12px; padding: 12px; }
+.column h2 { margin: 0 0 8px 0; font-size: 16px; color: #cfd8e3; }
+.stream { height: calc(100vh - 220px); overflow-y: auto; padding-right: 6px; }
+.line { padding: 6px 8px; margin: 4px 0; background: #0b1118; border: 1px solid #1a2330; border-radius: 10px; line-height: 1.5; word-break: break-word; }
+.muted { color: #9aa4b2; }
+.time { color: #6b7280; font-size: 12px; margin-right: 6px; }
