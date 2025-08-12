@@ -1,0 +1,26 @@
+{
+    "openai_api_key": "YOUR_OPENAI_API_KEY_HERE",
+    "audio_settings": {
+        "sample_rate": 16000,
+        "chunk_size": 1024,
+        "format": "int16",
+        "channels": 1,
+        "silence_threshold": 1000,
+        "min_audio_length": 1.0
+    },
+    "ui_settings": {
+        "window_width": 800,
+        "window_height": 600,
+        "font_size": 14,
+        "font_family": "Microsoft YaHei",
+        "bg_color": "#1e1e1e",
+        "text_color": "#ffffff",
+        "chinese_color": "#00ff88",
+        "spanish_color": "#ffaa00"
+    },
+    "translation_settings": {
+        "model": "gpt-4-turbo-preview",
+        "max_tokens": 1000,
+        "temperature": 0.3
+    }
+}
