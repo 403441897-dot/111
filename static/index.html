@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>中西同传 · Real-time CN ⇄ ES</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-yTBkqJr3p8B/BBsKo/24Q3Y5E0pTvpALkF23o6qKq0G3ZqHk1sJp9YwQU2D2xcOk" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>中西实时同传</h1>
+      <div class="controls">
+        <button id="startBtn">开始</button>
+        <button id="stopBtn" disabled>停止</button>
+        <span id="status" class="status">未开始</span>
+      </div>
+      <p class="hint">说中文或西语（墨西哥西班牙语），系统将自动识别并在两栏中显示原文与译文。</p>
+    </header>
+
+    <main class="columns">
+      <section class="column">
+        <h2>中文</h2>
+        <div id="zhStream" class="stream" aria-live="polite"></div>
+      </section>
+      <section class="column">
+        <h2>Español (México)</h2>
+        <div id="esStream" class="stream" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/client.js"></script>
+</body>
+</html>
